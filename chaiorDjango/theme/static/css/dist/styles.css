@@ -8,10 +8,13 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-800: oklch(47.3% 0.137 46.201);
-    --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-yellow-300: oklch(90.5% 0.182 98.111);
+    --color-emerald-300: oklch(84.5% 0.143 164.978);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-black: #000;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --tracking-normal: 0em;
@@ -395,17 +398,24 @@
     color: var(--color-info-content);
     --alert-color: var(--color-info);
   }
-  .bg-amber-800 {
-    background-color: var(--color-amber-800);
-  }
-  .bg-blue-400 {
-    background-color: var(--color-blue-400);
+  .bg-emerald-300 {
+    background-color: var(--color-emerald-300);
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
+  }
+  .bg-yellow-300 {
+    background-color: var(--color-yellow-300);
+  }
   .font-serif {
     font-family: var(--font-serif);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-5xl {
     font-size: var(--text-5xl);
